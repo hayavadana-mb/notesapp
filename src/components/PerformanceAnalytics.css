@@ -1,0 +1,11 @@
+.performance-analytics .chart {
+    background-color: #f1f3f5;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .stats p {
+    margin: 5px 0;
+  }
+  

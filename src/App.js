@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import UploadAssets from "./components/UploadAssets";
+import AdPreview from "./components/AdPreview";
+import ComplianceReview from "./components/ComplianceReview";
+import PerformanceAnalytics from "./components/PerformanceAnalytics";
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="app">
+      <header className="app-header">
+        <h1>CreativeOps Platform</h1>
+        <button className="launch-button" onClick={console.log("clicked")}>Launch Ads</button>
       </header>
+      <main className="dashboard">
+        <div className="left-panel">
+          <UploadAssets />
+          <ComplianceReview />
+        </div>
+        <div className="center-panel">
+          <AdPreview />
+        </div>
+        <div className="right-panel">
+          <PerformanceAnalytics />
+        </div>
+      </main>
     </div>
   );
 }
