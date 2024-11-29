@@ -1,0 +1,13 @@
+.compliance-review ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .pass {
+    color: green;
+  }
+  
+  .fail {
+    color: red;
+  }
+  
